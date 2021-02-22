@@ -58,7 +58,6 @@ Below table shows the end-to-end performance of processing 1080p videos with thi
     // DS5.0.1 gst-nvinfer cannot generate TRT engine for LPR model, so generate it with tlt-converter
     ./tlt-converter -k nvidia_tlt -p image_input,1x3x48x96,4x3x48x96,16x3x48x96 \
            ../models/LP/LPR/us_lprnet_baseline18_deployable.etlt -t fp16 -e ../models/LP/LPR/lpr_us_onnx_b16.engine
-    cd -
 ```
 
 ## Build and Run
